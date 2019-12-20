@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+        <p class="pc"></p>
+        <p class="pc"></p>
+        <p class="pc"></p>
+        <p class="pc"></p>
+        <p class="pc"></p>
+        <script>
+        var pc = document.querySelector(".pc")
+        pc.innerHTML = "대한민국"
+        var pcArray = document.querySelectorAll(".pc")
+        pcArray.forEach(function(item,index){
+
+            item.innerHTML = "우리나라"+index
+        });
+
+        function add(let num1){
+            console.log(num1)
+        }
+        let f = function add1(let num1){
+            console.log(num1)
+        }
+        add(30)
+        </script>
+</body>
+</html>
